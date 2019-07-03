@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>LisTrue</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6" d-flex justify-content-between>
+				<h2 >PlayList <strong>To Chill</strong></h2>
+                <ul class="playlist">
+                    <li data-cancion="Metronomy_The-Bay">
+                        <div class="d-flex justify-content-between">
+                            <div class="col-sm-3">
+                                <h5>Metronomy</h5>
+                                <p>The Bay</p>
+                            </div>
+                            <div>
+                            <img src="img/Metronomy_The-Bay.jpg" class="imagen">
+                            </div>
+                            <div class="btnR">
+                                <button class="btnReproducir">Reproducir</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-cancion="Jain_Oh-Man">
+                        <div class="d-flex justify-content-between">
+                            <div class="col-sm-3">
+                                <h5>Oh man!</h5>
+                                <p>Jain</p>
+                            </div>
+                            <div>
+                                <img src="img/Jain_Oh-Man.jpg" class="imagen">
+                            </div>
+                            <div class="btnR">
+                                <button class="btnReproducir">Reproducir</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-cancion="Jungle_Casio">
+                        <div class="d-flex justify-content-between">
+                            <div class="col-sm-3">
+                                <h5>Casio</h5>
+                                <p>Jungle</p>
+                            </div>
+                            <div>
+                                <img src="img/Jungle_Casio.jpg" class="imagen">
+                            </div>
+                            <div class="btnR">
+                                <button class="btnReproducir">Reproducir</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-cancion="Jain_Come">
+                        <div class="d-flex justify-content-between">
+                            <div class="col-sm-3">
+                                <h5>Come</h5>
+                                <p>Jain</p>
+                            </div>
+                            <div>
+                                <img src="img/Jain_Come.jpg" class="imagen">
+                            </div>
+                            <div class="btnR">
+                                <button class="btnReproducir">Reproducir</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-cancion="alice-merton_no-roots">
+                        <div class="d-flex justify-content-between">
+                            <div class="col-sm-3">
+                                <h5>No roots</h5>
+                                <p>Alice Merton</p>
+                            </div>
+                            <div>
+                                <img src="img/alice-merton_no-roots.jpg" class="imagen">
+                            </div>
+                            <div class="btnR">
+                                <button class="btnReproducir">Reproducir</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-cancion="Phum-Viphurit_Long-Gone">
+                        <div class="d-flex justify-content-between">
+                            <div class="col-sm-3">
+                                <h5>Long gone</h5>
+                                <p>Phum viphurit</p>
+                            </div>
+                            <div>
+                                <img src="img/Phum-Viphurit_Long-Gone.jpg"class="imagen">
+                            </div>
+                            <div class="btnR">
+                                <button class="btnReproducir">Reproducir</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+			</div>
+			<div class="col-sm-6">
+                <!--aquí es la vista del reproductor-->
+                <div class="playing-song" >
+                    <h2>Estás escuchando</h2>
+                    <div id="img-playing" class="img-size-playing">
+                        <img src="https://images.onlinelabels.com/images/clip-art/BenBois/BenBois_Vinyl_records.png">
+                        <div>
+                            <h4>Canción</h4>
+                            <h6>Artísta</h6>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class=""progress>
+                    <div id=""progreso class=""progress-bar></div>
+                </div>-->
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="row btn-rep d-flex justify-content-center">
+                    <button id="backwards" ><i class="fas fa-chevron-circle-left"></i></button>
+                    <button><i id="repoflush" class="far fa-play-circle"></i></button>
+                    <button><i class="fas fa-chevron-circle-right"></i></button>
+                </div>
+            </div>
+		</div>
+	</div>
+<script type="text/javascript" src="JS/app.js"></script>
+
+</body>
+</html>
